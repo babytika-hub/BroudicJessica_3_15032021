@@ -1,0 +1,31 @@
+.footer{
+    background-color: #383434;
+    &__container{
+        @include base
+    }
+    & a:hover{
+        border-bottom: white 1px solid;
+    }
+    &__nav h2{
+        font-family: "Shrikhand";
+    }
+    &__nav a{
+        color: white;
+        text-decoration: none;
+    }
+    &__icone{
+        margin-right: 10px;
+    }
+
+    ul {
+        list-style:none;
+        padding: 0;
+        & li{
+            color: white;
+            margin-bottom: 8px;
+            & h2{
+                margin: 0;
+            }
+        }
+    }
+}

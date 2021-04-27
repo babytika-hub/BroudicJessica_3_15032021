@@ -1,0 +1,164 @@
+.container{
+    background-color: $gris-clair;
+    border-radius: 20px;
+    width: 25%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    @include ombre;
+    flex: 1;
+}
+
+.container_menu{
+    background-color: rgba(250,250,250,255);
+    @include base;
+    border-radius: 20px 20px 0 0;
+    margin-top: -5rem;
+    position: relative;
+}
+
+.menubellow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    width: 23rem;
+    height: 40px;
+    overflow: hidden;
+    @include ombre;
+    padding: 1rem;
+    margin-bottom: 20px;
+    animation: appear 0.6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    &__number{
+        font-weight: 600;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__title{
+        @include disappear;
+    }
+    &__description{
+        @include disappear;
+    }
+    &.delai_1{
+        animation-delay: 0s;
+    }
+    &.delai_2{
+        animation-delay: .1s;
+    }
+    &.delai_3{
+        animation-delay: .2s;
+    }
+    &.delai_4{
+        animation-delay: .3s;
+    }
+    &.delai_5{
+        animation-delay: .4s;
+    }
+    &.delai_6{
+        animation-delay: .5s;
+    }
+    &.delai_7{
+        animation-delay: .6s;
+    }
+    &.delai_8{
+        animation-delay: .7s;
+    }
+    &.delai_9{
+        animation-delay: .8s;
+    }
+    &.delai_10{
+        animation-delay: .9s;
+    }
+}
+
+.menubellow{
+    white-space: nowrap; 
+    cursor: pointer;
+    &:hover .menubellow__number + .icone{
+        margin-right: -17px;
+        & .fa-check{
+            transform: rotate(360deg);
+            transition-duration: 0.5s;
+        }
+    }
+    &__footer{
+        flex: 1;
+        @include disappear;
+    }
+    & .icone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-tertiary;
+        padding: 1.5rem 0 1rem 0;
+        transition: color 0.3s ease-in-out;
+        border-radius: 0 20px 20px 0;
+        width: 5rem;
+        margin: -1rem -6rem -1rem 1rem;
+        transition: .5s;
+        
+    }
+    & .fa-check{
+        color: $color-tertiary;
+        background-color: white;
+        padding: 0.5rem;
+        border-radius: 100%;
+        transform: rotate(180deg);
+        transition: .5s;
+      }
+}
+
+@media (max-width: 1020px){
+    .fonction__container{
+        display: block;
+        flex-direction: column;
+        & .container{
+            width: 100%;
+            height: 5rem;
+            margin-bottom: 20px;
+            flex: inherit;
+        }
+        & .containers{
+            margin-right: 0;
+        }
+    }
+    .restaurant__card{
+        display: block;
+        & .card{
+            flex: inherit;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        & .cards{
+            margin-left: 0;
+        }
+    }
+    .container__menubellow{
+        flex-direction: column;
+        & .menubellow{
+            width: auto;
+            & .icone{
+                margin: -1rem -8rem -1rem 1rem;
+            }
+            &__number{
+                margin-right: 35px;
+            } 
+        }
+        & .container_entree{
+            margin-right: 0px;
+        }
+    }
+    .box__btn--button{
+        width: 10rem;
+    }
+}
+@media (min-width: 1021px) and (max-width: 1400px){
+    .container__menubellow{
+        flex-wrap: wrap;
+    }
+}

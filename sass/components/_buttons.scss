@@ -1,0 +1,59 @@
+.button{
+    padding-bottom: 1rem;
+    &--btn{
+        color: white;
+        font-weight: 600;
+        padding: 0.75rem;
+        border-radius: 20px;
+        @include ombre;
+        @include graduate;
+        &:hover{
+            box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,.500);
+            transition-duration: 1s;
+            animation: 1s;
+            cursor: pointer;
+        }     
+    }
+}
+
+.heart{
+    color: #000;
+    border-radius: 50%;
+    padding:.2em;
+    font-size: 2rem;
+    & :hover::before{
+        color: $color-secondary;
+        cursor: pointer;
+        font-weight: bold;
+        opacity: 1; 
+    }
+    & ::before{
+        content: "\f004";
+        transition:  .50s ease;
+        animation: .50s;
+        
+    }
+}
+
+.box__btn{
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+    &--button{
+        display: flex;
+        color: white;
+        font-weight: 600;
+        padding: 1rem;
+        width: 15%;
+        border-radius: 20px;
+        @include ombre;
+        @include graduate;
+        justify-content: center;
+        &:hover{
+            box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,.500);
+            transition-duration: 1s;
+            cursor: pointer; 
+            animation: 1s;
+        }
+    }
+}

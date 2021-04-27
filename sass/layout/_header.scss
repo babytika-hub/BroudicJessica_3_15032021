@@ -1,0 +1,13 @@
+.header{
+    padding: 1rem;
+    @include ombre;
+    position: relative;
+    text-align: center;
+    &__arrow{
+      font-size: 2rem;
+      position: absolute;
+      left: 10px;
+      top: 1.2rem;
+      color: black;
+    }
+  }
