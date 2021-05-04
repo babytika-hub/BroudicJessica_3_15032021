@@ -4,7 +4,7 @@ body, html {
   font-family: 'Roboto', sans-serif;
 }
 
-.carte h2 {
+.carte h2, .header__title {
   font-family: "Shrikhand";
 }
 
@@ -94,7 +94,7 @@ body, html {
 }
 
 .header {
-  padding: 1rem;
+  padding: 0.25rem;
   -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
           box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
   position: relative;
@@ -105,7 +105,7 @@ body, html {
   font-size: 2rem;
   position: absolute;
   left: 18rem;
-  top: 1.2rem;
+  top: 2rem;
   color: black;
 }
 

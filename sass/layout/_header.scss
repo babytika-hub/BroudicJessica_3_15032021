@@ -1,5 +1,5 @@
 .header{
-    padding: 1rem;
+    padding: 0.25rem;
     @include ombre;
     position: relative;
     text-align: center;
@@ -7,7 +7,7 @@
       font-size: 2rem;
       position: absolute;
       left: 18rem;
-      top: 1.2rem;
+      top: 2rem;
       color: black;
     }
   }
