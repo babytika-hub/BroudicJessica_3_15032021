@@ -157,8 +157,11 @@
         width: 10rem;
     }
 }
-@media (min-width: 1021px) and (max-width: 1400px){
+@media (min-width: 1021px) and (max-width: 1300px){
     .container__menubellow{
-        flex-wrap: wrap;
+        flex-direction: column;
+        & .menubellow{
+            width: 100%;
+        }
     }
 }

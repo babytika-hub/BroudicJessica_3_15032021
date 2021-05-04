@@ -350,10 +350,15 @@ body, html {
   }
 }
 
-@media (min-width: 1021px) and (max-width: 1400px) {
+@media (min-width: 1021px) and (max-width: 1300px) {
   .container__menubellow {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container__menubellow .menubellow {
+    width: 100%;
   }
 }
 
