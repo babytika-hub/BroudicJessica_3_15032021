@@ -6,8 +6,20 @@
     &__arrow{
       font-size: 2rem;
       position: absolute;
-      left: 18rem;
-      top: 2rem;
+        left: 18rem;
+        top: 2rem;
       color: black;
     }
+  }
+
+  @media (max-width: 1020px){
+    .header__arrow{
+      left: 10px;
+    }
+  }
+
+  @media (min-width: 1021px) and (max-width: 1300px){
+    .header__arrow{
+      left: 10px;
+    } 
   }
